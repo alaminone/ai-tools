@@ -20,8 +20,8 @@ const displayAiTools = (toolsData) => {
         toolCard.classList = "card card-compact bg-base-100 shadow border";
 
         toolCard.innerHTML = `
-         <div class=" w-auto">
-         <figure class=" p-5 w-auto" ><img class="rounded-lg" src="${tool?.image}" alt="" /></figure>
+         <div  class=" w-auto">
+         <figure onclick="showModalHandle('${tool.id}')" class=" p-5 w-auto" ><img class="rounded-lg" src="${tool?.image}" alt="" /></figure>
 
          <h2 class="card-title mx-5">Features</h2>
          <ul class="mx-5 mb-5">
@@ -54,7 +54,7 @@ const showModalHandle = async (id) => {
     const res = await fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`);
     const data = await res.json();
     const modaldata = data.data;
-    console.log(modaldata);
+    // console.log(modaldata);
     showmy_modal.showModal();
     modalDataShow(modaldata);
      
