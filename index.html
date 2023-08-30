@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Tools</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header class="container mx-auto ">
+        <h3 class="text-5xl font-bold text-center my-10">
+            AI Universe Hub
+        </h3>
+        <div class="text-center">
+            <button class="btn btn-secondary bg-rose-500 font-bold text-white">Sort By Date</button>
+   
+    </header>
+        </div>
+    <main class="container mx-auto">
+        <section>
+            <div id="card-continar" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5  my-8 mx-3">
+              
+            </div>
+            <!-- modal -->
+            <section>
+                <!-- You can open the modal using ID.showModal() method -->
+
+
+
+<dialog id="showmy_modal" class="rounded-md w-3/4">
+  <form method="dialog" class=" ">
+    <button class="btn bg-rose-500 text-white btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    <div id="modal-continer" class="">
+        <!-- modal -->
+    </div>
+  </form>
+</dialog>
+</div>
+            </section>
+            <!-- showAll btn -->
+          
+        </section>
+        <div  class="text-center my-6">
+            <button  onclick="showAll()" id="show-all-btn" class="btn btn-secondary text-white ">Show All</button>
+           </div>
+    </main>
+    <script src="script/tools.js"></script>
+</body>
+</html>
